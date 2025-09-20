@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+*{
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+@layer base {
+  @theme {
+    --color-white-100: #dbddd0;
+    --color-primary-100: #354be2;
+  }
+}
+
+:root.dark {
+  --color-bg: #0b1220;
+  --color-card: #071025;
+  --color-text: #f8fafc;
+  --color-accent-500: oklch(32% 0.12 260);
+}
+
+@layer utilities {
+  .text-30-extrabold {
+    @apply text-[45px] font-bold text-white-100;
+  }
+
+  .text-30-bold {
+    @apply text-[30px] font-bold text-black;
+  }
+
+  .text-30-semibold {
+    @apply font-semibold text-[30px] text-black;
+  }
+
+  .text-26-semibold {
+    @apply font-semibold text-[26px] text-black;
+  }
+
+  .text-24-black {
+    @apply text-[24px] font-black text-black;
+  }
+
+  .text-20-medium {
+    @apply font-normal text-[20px] text-white-100;
+  }
+
+  .text-16-medium {
+    @apply font-medium text-[16px] text-white;
+  }
+
+  .text-14-normal {
+    @apply font-normal text-sm ;
+  }
+
+  .section_container {
+    @apply px-6 py-10 max-w-7xl mx-auto;
+  }
+}
