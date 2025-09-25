@@ -392,5 +392,74 @@ console.log(a === b); // false
 - Single Page Application (SPA)
 - إدارة الحالة (State Management)
   `
+},
+{
+  id: 22,
+  question: "اشرحلي شو هي مكونات  الأساسية في React؟",
+  difficulty: "متوسط",
+  language: "react",
+  markdown: `
+في React عنا خمس مكونات  أساسية للبناء:
+
+- **Components**: قطع قابلة لإعادة الاستخدام من الكود، وبتطلع HTML.
+- **JSX**: اختصار JavaScript XML، وبيسمحلك تكتب HTML داخل JavaScript.
+- **Props و State**: الـ props مثل معاملات الدوال، والـ State مثل المتغيرات.
+- **Context**: بيسمح تمرير البيانات بين المكونات بطريقة هرمية.
+- **Virtual DOM**: نسخة خفيفة من الـ DOM الأصلي، بتسهّل التعامل مع التغييرات وتحسّن الأداء.
+  `
+},
+{
+  id: 23,
+  question: "شو هو Virtual DOM في React؟",
+  difficulty: "متوسط",
+  language: "react",
+  markdown: `
+- DOM هو اختصار Document Object Model، وبيمثل هيكل صفحة الويب.
+- Virtual DOM عبارة عن نسخة افتراضية من الـ DOM، كلها نفس الخصائص.
+- الفرق الأساسي: لما يعمل JavaScript Framework update للـ DOM الكامل رح يكون الأداء بطيء، بينما Virtual DOM بيحدّث بس الجزء اللي تغيّر، فالأداء أسرع.
+  `
+},
+{
+  id: 24,
+  question: "شو هو JSX في React؟",
+  difficulty: "مبتدئ",
+  language: "react",
+  markdown: `
+- JSX اختصار JavaScript XML.
+- هو امتداد للـ JavaScript يسمحلك تكتب HTML جوّا JS.
+- React بعدها بتحوّل JSX لكود JavaScript عادي يقدر المتصفح ينفذه.
+
+\`\`\`jsx
+import React from 'react';
+
+function App() {  
+    return <h1>Hello, React!</h1>;
 }
+
+export default App;
+\`\`\`
+
+- بالمثال، JSX جوّا دالة App بيرجع عنصر <h1> بيعرض النص "Hello, React!" بالمتصفح.
+  `
+},
+{
+  id: 25,
+  question: "شو هي المكونات (Components) في React؟",
+  difficulty: "متوسط",
+  language: "react",
+  markdown: `
+- Component هو وحدة أساسية من مكونات  React.
+- يعني كل تطبيق React بيتكوّن من مكونات صغيرة كل وحدة إلها وظيفة.
+
+**أنواع المكونات:**
+- **Functional Component**:
+  - دوال JS بسيطة بتاخد props كمدخل وترجع JSX.
+  - فيك تتحكم بالـ state والـ lifecycle باستخدام Hooks.
+- **Class Component**:
+  - أعقد شوي من الـ functional.
+  - ممكن تتواصل مع مكونات تانية.
+  - فيك تمرر البيانات بين class components بسهولة.
+  `
+}
+
 ];
